@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Cambiado a stretch para ocupar toda la altura */
+    height: 100vh;
+    background-image: url(https://png.pngtree.com/background/20230520/original/pngtree-black-calculator-on-a-dark-surface-picture-image_2674669.jpg);
+    background-size: cover;
+    margin: 0; /* Asegúrate de que no haya margen en el body */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Para apilar la calculadora y el footer verticalmente */
+    justify-content: space-between; /* Espacia entre la calculadora y el footer */
+    height: 100%; /* Asegura que ocupe toda la altura disponible */
+}
+
+.calculator {
+    border: 1px solid beige;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#display {
+    width: 100%;
+    height: 40px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: rgba(231, 231, 231, 0.7);
+    padding: 20px;
+    font-size: 18px;
+    border: 3px solid beige;
+    transition: background-color 0.3s; /* Añadir transición */
+}
+
+/* Efecto hover */
+button:hover {
+    background-color: yellow; /* Color al pasar el cursor */
+}
+
+footer {
+    text-align: center; /* Centrar el texto del footer */
+    padding: 10px; /* Espaciado interno */
+    color: white; /* Color del texto del footer */
+}
